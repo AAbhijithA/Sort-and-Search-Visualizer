@@ -10,6 +10,6 @@ Visualized all sort and search algorithms using JavaScript. Tthe following site 
 | Merge Sort    | O(N*log2(N))    |    O(N) |
 | Quick Sort    | Avg O(N*log2(N))|    O(N) |
 | Heap Sort     | O(N*log2(N))    |    O(N) |
-| Linear Search | O(N*log2(N))    |    O(1) |
+| Linear Search | O(N)            |    O(1) |
 | Binary Search | O(log2(N))      |    O(1) |
 | Ternary Search| O(log3(N))      |    O(1) |
