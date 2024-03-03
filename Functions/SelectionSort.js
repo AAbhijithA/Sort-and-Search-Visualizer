@@ -74,6 +74,7 @@ async function SelectionSort(){
         canvasBG.update();
         await sleep(speed);
         var mnidx = i;
+        //Finding next minimal element to the right
         for(let j = i + 1; j < array.length; j++){
             if(array[mnidx] > array[j]){
                 bgcolor[j] = lightGreen;
