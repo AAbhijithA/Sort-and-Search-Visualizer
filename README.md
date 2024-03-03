@@ -3,6 +3,8 @@
 
 Visualized all sort and search algorithms using the above tech stack.
 
+***(Note: While entering input please use ',' as a separator for each value and the code supports integers only)***
+
 | Algorithm     | Time Complexity| Space Complexity |
 | :------------ |:---------------:|:-----:|
 | Bubble Sort   | O(N^2)          |   O(1) |
