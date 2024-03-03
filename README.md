@@ -1,5 +1,7 @@
 # Sort and Search Visualizer
-Visualized all sort and search algorithms using JavaScript. The following site visualizes the following functions.
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)![](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)![](https://img.shields.io/badge/Chart%20js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)
+
+Visualized all sort and search algorithms using the above tech stack.
 
 | Algorithm     | Time Complexity| Space Complexity |
 | :------------ |:---------------:|:-----:|
@@ -13,9 +15,6 @@ Visualized all sort and search algorithms using JavaScript. The following site v
 | Linear Search | O(N)            |    O(1) |
 | Binary Search | O(log2(N))      |    O(1) |
 | Ternary Search| O(log3(N))      |    O(1) |
-
-## Tech Stack
-![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)![](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)![](https://img.shields.io/badge/Chart%20js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)
 
 ## Sorting Algorithms
 
