@@ -65,6 +65,7 @@ async function LinearSearch(){
     var canvasBG = new Chart(canvasElement, config);
     window.myBar = canvasBG;
 
+    //Running Linear Search
     for(let i = 0; i < array.length; i++){
         bgcolor[i] = lightRed;
         borcolor[i] = darkRed;
