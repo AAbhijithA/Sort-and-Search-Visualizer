@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type = "text/javascript" src="../Functions/QuickSort.js"></script>
+    <link rel="stylesheet" href="../Styles/SortPage.css">
+    <link rel="stylesheet" href="../Styles/navbar.css">
+    <link rel="icon" href="../Styles/bar-graph.png">
+    <title>Quick Sort</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a>Sorting and Search Visualizer</a>
+      <a href="BubbleSort.html">Bubble Sort</a>
+      <a href="SelectionSort.html">Selection Sort</a>
+      <a href="InsertionSort.html">Insertion Sort</a>
+      <a href="CountingSort.html">Counting Sort</a>
+      <a href="MergeSort.html">Merge Sort</a>
+      <a class="active" href="">Quick Sort</a>
+      <a href="HeapSort.html">Heap Sort</a>
+      <a href="LinearSearch.html">Linear Search</a>
+      <a href="BinarySearch.html">Binary Search</a>
+      <a href="TernarySearch.html">Ternary Search</a>
+    </div>
+    <div id="Intro">
+      <p>Quick sort works with the divide and conquer strategy. It divides the array into
+        partitions and put all the values lesser than the partition to left and the rest to the
+        left of the array and then it does the same to the left and right partitions repeatedly.
+        This has an average time complexity of <strong>O(N*log(N))</strong> with a constant space
+        unless if we consider stack call space it's <strong>O(N)</strong>. If we choose the wrong
+        partition it leads to being <strong>O(N^2)</strong>. Quick Sort is used to build hybrid Sorting
+        algorithms such as Insort which is highly used in the industries.
+    </div>
+    <div align="center" id="Chart">
+        <canvas id="BarChart"></canvas>
+        <div align="center" id="form">
+          <label for="sortArray" class="txt"><strong>Enter Numbers </strong></label>
+          <input type="text" id="sortArray" name="sortArray"> <br><br>
+          <label for="speed" class="txt"><strong>Enter Speed (ms) </strong></label>
+          <input type="text" id="speed" name="speed"> <br><br>
+          <input type="button" onclick="QuickSort()" value ="Sort the Elements" id="btx1">
+      </div>
+    </div>
+  </body>
+</html>

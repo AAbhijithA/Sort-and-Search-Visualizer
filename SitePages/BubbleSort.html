@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type = "text/javascript" src="../Functions/BubbleSort.js"></script>
+    <link rel="stylesheet" href="../Styles/SortPage.css">
+    <link rel="stylesheet" href="../Styles/navbar.css">
+    <link rel="icon" href="../Styles/bar-graph.png">
+    <title>Bubble Sort</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a>Sorting and Search Visualizer</a>
+      <a class="active" href="">Bubble Sort</a>
+      <a href="SelectionSort.html">Selection Sort</a>
+      <a href="InsertionSort.html">Insertion Sort</a>
+      <a href="CountingSort.html">Counting Sort</a>
+      <a href="MergeSort.html">Merge Sort</a>
+      <a href="QuickSort.html">Quick Sort</a>
+      <a href="HeapSort.html">Heap Sort</a>
+      <a href="LinearSearch.html">Linear Search</a>
+      <a href="BinarySearch.html">Binary Search</a>
+      <a href="TernarySearch.html">Ternary Search</a>
+    </div>
+    <div id="Intro">
+        <p>Bubble sort works with comparing each value to it's next element to swap with if current is
+            greater along the way. This algorithm then runs the comparison along the whole array N times
+           making it <strong>O(N^2)</strong> and has constant memory usage. This algorithm is a brute
+           force approach compared to other sorting algorithm intuition wise. It is rarely used in real
+           world applications now and works well in only small datasets.</p>
+    </div>
+    <div align="center" id="Chart">
+        <canvas id="BarChart"></canvas>
+        <div align="center" id="form">
+            <label for="sortArray" class="txt"><strong>Enter Numbers </strong></label>
+            <input type="text" id="sortArray" name="sortArray"> <br><br>
+            <label for="speed" class="txt"><strong>Enter Speed (ms) </strong></label>
+            <input type="text" id="speed" name="speed"> <br><br>
+            <input type="button" onclick="BubbleSort()" value ="Sort the Elements" id="btx1">
+        </div>
+    </div>
+  </body>
+</html>

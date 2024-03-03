@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type = "text/javascript" src="../Functions/HeapSort.js"></script>
+    <link rel="stylesheet" href="../Styles/SortPage.css">
+    <link rel="stylesheet" href="../Styles/navbar.css">
+    <link rel="icon" href="../Styles/bar-graph.png">
+    <title>Heap Sort</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a>Sorting and Search Visualizer</a>
+      <a href="BubbleSort.html">Bubble Sort</a>
+      <a href="SelectionSort.html">Selection Sort</a>
+      <a href="InsertionSort.html">Insertion Sort</a>
+      <a href="CountingSort.html">Counting Sort</a>
+      <a href="MergeSort.html">Merge Sort</a>
+      <a href="QuickSort.html">Quick Sort</a>
+      <a class="active" href="">Heap Sort</a>
+      <a href="LinearSearch.html">Linear Search</a>
+      <a href="BinarySearch.html">Binary Search</a>
+      <a href="TernarySearch.html">Ternary Search</a>
+    </div>
+    <div id="Intro">
+        <p>Heap sort works with the building of Max-Heap or Binary Heap strategy. It divides the array into a
+            tree like structure where the parent is larger than it's children and continuously build it if it's 
+            not. It's a comparison based sort and is one of the best sorting algorithms along with Merge Sort 
+            and Quick Sort. It has a time complexity of <strong>O(N*log(N))</strong> with a constant space
+            unless if we consider stack call space it's <strong>O(N)</strong>. Heap Sort is also used to build
+            Insort along with Quick Sort for the most optimized sorting algorithm.
+    </div>
+    <div align="center" id="Chart">
+        <canvas id="BarChart"></canvas>
+        <div align="center" id="form">
+            <label for="sortArray" class="txt"><strong>Enter Numbers </strong></label>
+            <input type="text" id="sortArray" name="sortArray"> <br><br>
+            <label for="speed" class="txt"><strong>Enter Speed (ms) </strong></label>
+            <input type="text" id="speed" name="speed"> <br><br>
+            <input type="button" onclick="HeapSort()" value ="Sort the Elements" id="btx1">
+        </div>
+    </div>
+  </body>
+</html>

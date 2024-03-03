@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(171, 201, 216);
+}
+#Intro{
+    font: 1.2rem "Fira Sans", sans-serif;
+    text-align: justify;
+    padding-left: 17%;
+    padding-right: 17%;
+}
+#Chart{
+    font: 1.2rem "Fira Sans", sans-serif;
+    padding-left: 27%;
+    padding-right: 27%;
+}
+#btx1{
+      
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 30px;
+    background-color: #9147ff;
+    color: white;
+    padding: 0 20px;
+    :hover {
+        background-color: #772ce8;
+    }
+}
+#sortArray{
+    height: 100%;
+    width: 20%;
+}
+.txt{
+    font-size: 15px;
+    padding-left: 0%;
+}
+#form{
+    text-align: left;
+}

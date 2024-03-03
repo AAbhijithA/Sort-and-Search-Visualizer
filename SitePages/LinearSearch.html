@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type = "text/javascript" src="../Functions/Search.js"></script>
+    <link rel="stylesheet" href="../Styles/SortPage.css">
+    <link rel="stylesheet" href="../Styles/navbar.css">
+    <link rel="icon" href="../Styles/bar-graph.png">
+    <title>Linear Search</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a>Sorting and Search Visualizer</a>
+      <a href="BubbleSort.html">Bubble Sort</a>
+      <a href="SelectionSort.html">Selection Sort</a>
+      <a href="InsertionSort.html">Insertion Sort</a>
+      <a href="CountingSort.html">Counting Sort</a>
+      <a href="MergeSort.html">Merge Sort</a>
+      <a href="QuickSort.html">Quick Sort</a>
+      <a href="HeapSort.html">Heap Sort</a>
+      <a class="active" href="">Linear Search</a>
+      <a href="BinarySearch.html">Binary Search</a>
+      <a href="TernarySearch.html">Ternary Search</a>
+    </div>
+    <div id="Intro">
+        <p>Linear search works with searching linearly on the data making it <strong>O(N)</strong> 
+           This algorithm is a brute force approach compared to the other search algorithms intuition wise.
+    </div>
+    <div align="center" id="Chart">
+        <canvas id="BarChart"></canvas>
+        <div align="center" id="form">
+            <label for="sortArray" class="txt"><strong>Enter Numbers </strong></label>
+            <input type="text" id="sortArray" name="sortArray"> <br><br>
+            <label for="key" class="txt"><strong>Enter Key </strong></label>
+            <input type="text" id="key" name="key"> <br><br>
+            <label for="speed" class="txt"><strong>Enter Speed (ms) </strong></label>
+            <input type="text" id="speed" name="speed"> <br><br>
+            <input type="button" onclick="LinearSearch()" value ="Search" id="btx1">
+            <p class="txt" id="Answer"></p>
+        </div>
+    </div>
+  </body>
+</html>
